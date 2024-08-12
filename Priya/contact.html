@@ -135,13 +135,18 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    (function(){
-      emailjs.init("iAI6zH2Z_0XoirgA7");
-    })();
-  </script>
   <script src="assets/js/contact.js"></script>
 
+  
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "iAI6zH2Z_0XoirgA7",
+      });
+    })();
+  </script>
 </body>
 </html>
